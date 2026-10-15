@@ -11,6 +11,7 @@ from src.quality.validate_pipeline import (
     check_status,
     check_payment_channel,
     check_gold_reconciliation,
+    run_quality_checks,
 )
 from src.transformers.gold_transformation import create_daily_summary
 
@@ -253,3 +254,34 @@ def test_non_numeric_amount_fails_quality_check(valid_transactions):
 
     with pytest.raises(ValueError, match="Invalid transaction amount"):
         check_amounts(valid_transactions)
+
+
+def test_quality_gate_passes_valid_data(valid_transactions, capsys):
+    silver_df = valid_transactions.copy()
+
+    gold_df = pd.DataFrame(
+        {
+            "transaction_count": [2, 1],
+            "total_amount": [350.00, 150.00],
+        }
+    )
+
+    run_quality_checks(silver_df, gold_df)
+
+    captured = capsys.readouterr()
+    assert "ALL DATA-QUALITY CHECKS PASSED" in captured.out
+
+
+def test_quality_gate_rejects_invalid_data(valid_transactions):
+    silver_df = valid_transactions.copy()
+    silver_df.loc[0, "currency"] = None
+
+    gold_df = pd.DataFrame(
+        {
+            "transaction_count": [2, 1],
+            "total_amount": [350.00, 150.00],
+        }
+    )
+
+    with pytest.raises(ValueError, match="Invalid currencies"):
+        run_quality_checks(silver_df, gold_df)

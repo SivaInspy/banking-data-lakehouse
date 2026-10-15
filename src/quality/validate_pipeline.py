@@ -33,6 +33,24 @@ VALID_PAYMENT_CHANNELS = {
 }
 
 
+
+def run_quality_checks(silver_df, gold_df):
+    """Run all Silver data-quality checks and Silver-to-Gold reconciliation."""
+
+    check_required_columns(silver_df)
+    check_transaction_ids(silver_df)
+    check_amounts(silver_df)
+    check_currency(silver_df)
+    check_status(silver_df)
+    check_payment_channel(silver_df)
+    check_gold_reconciliation(silver_df, gold_df)
+
+    print()
+    print("======================================")
+    print("ALL DATA-QUALITY CHECKS PASSED")
+    print("======================================")
+
+
 # ---------------------------------------------------------
 # Validation Helpers
 # ---------------------------------------------------------
@@ -212,45 +230,7 @@ def main():
 
     print()
 
-    check_required_columns(
-        silver_df
-    )
-
-    check_transaction_ids(
-        silver_df
-    )
-
-    check_amounts(
-        silver_df
-    )
-
-    check_currency(
-        silver_df
-    )
-
-    check_status(
-        silver_df
-    )
-
-    check_payment_channel(
-        silver_df
-    )
-
-    check_gold_reconciliation(
-        silver_df,
-        gold_df,
-    )
-
-    print()
-    print(
-        "======================================"
-    )
-    print(
-        "ALL DATA-QUALITY CHECKS PASSED"
-    )
-    print(
-        "======================================"
-    )
+    run_quality_checks(silver_df, gold_df)
 
 
 if __name__ == "__main__":
