@@ -222,3 +222,34 @@ def test_gold_reconciliation_accepts_rounding_to_two_decimal_places():
     )
 
     check_gold_reconciliation(silver_df, gold_df)
+
+
+def test_null_currency_fails_quality_check(valid_transactions):
+    valid_transactions.loc[0, "currency"] = None
+
+    with pytest.raises(ValueError, match="Invalid currencies"):
+        check_currency(valid_transactions)
+
+
+def test_null_status_fails_quality_check(valid_transactions):
+    valid_transactions.loc[0, "transaction_status"] = None
+
+    with pytest.raises(ValueError, match="Invalid transaction statuses"):
+        check_status(valid_transactions)
+
+
+def test_null_payment_channel_fails_quality_check(valid_transactions):
+    valid_transactions.loc[0, "payment_channel"] = None
+
+    with pytest.raises(ValueError, match="Invalid payment channels"):
+        check_payment_channel(valid_transactions)
+
+
+def test_non_numeric_amount_fails_quality_check(valid_transactions):
+    valid_transactions["amount"] = valid_transactions["amount"].astype(
+        "object"
+    )
+    valid_transactions.loc[0, "amount"] = "abc"
+
+    with pytest.raises(ValueError, match="Invalid transaction amount"):
+        check_amounts(valid_transactions)

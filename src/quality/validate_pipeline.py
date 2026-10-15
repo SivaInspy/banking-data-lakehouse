@@ -87,73 +87,55 @@ def check_transaction_ids(df):
 
 
 def check_amounts(df):
+    amounts = pd.to_numeric(df["amount"], errors="coerce")
 
-    if df["amount"].isna().any():
+    if amounts.isna().any():
+        raise ValueError("Invalid transaction amount: null or non-numeric value found")
 
-        raise ValueError(
-            "Null transaction amount found"
-        )
+    if (amounts <= 0).any():
+        raise ValueError("Non-positive transaction amount found")
 
-    if (df["amount"] <= 0).any():
-
-        raise ValueError(
-            "Non-positive transaction amount found"
-        )
-
-    print(
-        "PASS: Transaction amounts are valid"
-    )
+    print("PASS: Transaction amounts are valid")
 
 
 def check_currency(df):
+    invalid = set(df.loc[df["currency"].isna(), "currency"])
 
-    invalid = set(
-        df["currency"].dropna()
-    ) - VALID_CURRENCIES
-
-    if invalid:
-
-        raise ValueError(
-            f"Invalid currencies found: {invalid}"
-        )
-
-    print(
-        "PASS: Currency values are valid"
+    invalid.update(
+        set(df.loc[df["currency"].notna(), "currency"])
+        - VALID_CURRENCIES
     )
+
+    if df["currency"].isna().any() or invalid:
+        raise ValueError(f"Invalid currencies found: {invalid or {'NULL'}}")
+
+    print("PASS: Currency values are valid")
 
 
 def check_status(df):
-
     invalid = set(
-        df["transaction_status"].dropna()
+        df.loc[df["transaction_status"].notna(), "transaction_status"]
     ) - VALID_STATUSES
 
-    if invalid:
-
+    if df["transaction_status"].isna().any() or invalid:
         raise ValueError(
-            f"Invalid transaction statuses found: {invalid}"
+            f"Invalid transaction statuses found: {invalid or {'NULL'}}"
         )
 
-    print(
-        "PASS: Transaction statuses are valid"
-    )
+    print("PASS: Transaction statuses are valid")
 
 
 def check_payment_channel(df):
-
     invalid = set(
-        df["payment_channel"].dropna()
+        df.loc[df["payment_channel"].notna(), "payment_channel"]
     ) - VALID_PAYMENT_CHANNELS
 
-    if invalid:
-
+    if df["payment_channel"].isna().any() or invalid:
         raise ValueError(
-            f"Invalid payment channels found: {invalid}"
+            f"Invalid payment channels found: {invalid or {'NULL'}}"
         )
 
-    print(
-        "PASS: Payment channels are valid"
-    )
+    print("PASS: Payment channels are valid")
 
 
 def check_gold_reconciliation(
