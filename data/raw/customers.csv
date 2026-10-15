@@ -1,0 +1,101 @@
+customer_id,customer_name,date_of_birth,gender,city,state,country,customer_segment,registration_date
+CUST00001,Ravi Sharma,1993-04-06,MALE,Chennai,Tamil Nadu,India,PREMIUM,2021-01-31
+CUST00002,Karthik Sharma,1986-06-27,MALE,Bengaluru,Karnataka,India,RETAIL,2022-09-25
+CUST00003,Priya Reddy,1982-09-01,MALE,Hyderabad,Telangana,India,PREMIUM,2024-10-01
+CUST00004,Kavya Rao,1969-11-20,FEMALE,Kochi,Kerala,India,RETAIL,2023-01-14
+CUST00005,Ajay Iyer,1975-04-06,MALE,Kochi,Kerala,India,PREMIUM,2021-02-12
+CUST00006,Ajay Nair,1964-02-28,MALE,Bengaluru,Karnataka,India,SALARY,2022-04-06
+CUST00007,Deepa Nair,1996-03-15,FEMALE,Delhi,Delhi,India,RETAIL,2018-06-27
+CUST00008,Manoj Das,1984-10-05,FEMALE,Bengaluru,Karnataka,India,PREMIUM,2021-04-15
+CUST00009,Kavya Sharma,1989-08-30,FEMALE,Chennai,Tamil Nadu,India,RETAIL,2020-07-22
+CUST00010,Deepa Reddy,1977-01-18,FEMALE,Bengaluru,Karnataka,India,SALARY,2021-02-12
+CUST00011,Karthik Nair,1969-05-25,FEMALE,Pune,Maharashtra,India,RETAIL,2025-07-08
+CUST00012,Meena Iyer,1967-05-01,FEMALE,Hyderabad,Telangana,India,SALARY,2023-03-09
+CUST00013,Manoj Rao,1990-09-16,MALE,Hyderabad,Telangana,India,PREMIUM,2021-08-21
+CUST00014,Deepa Kumar,1977-12-29,MALE,Pune,Maharashtra,India,PREMIUM,2021-01-01
+CUST00015,Manoj Krishnan,1969-07-15,FEMALE,Pune,Maharashtra,India,SME,2025-05-08
+CUST00016,Manoj Menon,1971-11-18,MALE,Mumbai,Maharashtra,India,SALARY,2019-07-26
+CUST00017,Kavya Krishnan,2000-04-09,FEMALE,Kochi,Kerala,India,SALARY,2024-07-18
+CUST00018,Divya Iyer,1964-01-29,MALE,Coimbatore,Tamil Nadu,India,PREMIUM,2018-07-12
+CUST00019,Ravi Iyer,1986-10-02,FEMALE,Kochi,Kerala,India,SME,2018-09-18
+CUST00020,Meena Menon,1984-10-25,MALE,Delhi,Delhi,India,SALARY,2018-02-17
+CUST00021,Ajay Nair,1973-03-01,MALE,Bengaluru,Karnataka,India,SME,2022-11-16
+CUST00022,Arun Patel,1982-10-09,FEMALE,Mumbai,Maharashtra,India,PREMIUM,2019-03-12
+CUST00023,Karthik Nair,1984-03-12,MALE,Mumbai,Maharashtra,India,SALARY,2023-12-13
+CUST00024,Anitha Kumar,1976-04-13,MALE,Bengaluru,Karnataka,India,RETAIL,2021-06-13
+CUST00025,Divya Krishnan,1963-11-04,MALE,Bengaluru,Karnataka,India,PREMIUM,2023-06-14
+CUST00026,Karthik Menon,1971-11-21,FEMALE,Mumbai,Maharashtra,India,PREMIUM,2023-12-02
+CUST00027,Manoj Rao,1991-12-24,FEMALE,Hyderabad,Telangana,India,SALARY,2021-06-30
+CUST00028,Anitha Rao,1965-06-05,MALE,Coimbatore,Tamil Nadu,India,RETAIL,2020-10-12
+CUST00029,Sneha Kumar,1986-05-25,MALE,Hyderabad,Telangana,India,RETAIL,2020-06-21
+CUST00030,Kavya Kumar,1963-01-09,FEMALE,Hyderabad,Telangana,India,RETAIL,2018-05-09
+CUST00031,Suresh Reddy,1990-01-03,MALE,Delhi,Delhi,India,PREMIUM,2023-06-12
+CUST00032,Kavya Krishnan,1970-11-25,FEMALE,Coimbatore,Tamil Nadu,India,PREMIUM,2023-04-22
+CUST00033,Priya Sharma,1975-11-22,FEMALE,Kochi,Kerala,India,SME,2022-10-01
+CUST00034,Deepa Kumar,1962-09-20,FEMALE,Bengaluru,Karnataka,India,RETAIL,2022-07-08
+CUST00035,Divya Reddy,1984-01-21,MALE,Hyderabad,Telangana,India,SME,2023-01-12
+CUST00036,Karthik Patel,1971-03-16,FEMALE,Coimbatore,Tamil Nadu,India,RETAIL,2018-11-05
+CUST00037,Arun Rao,1964-03-08,MALE,Chennai,Tamil Nadu,India,SME,2020-08-26
+CUST00038,Anitha Menon,1998-10-14,MALE,Hyderabad,Telangana,India,PREMIUM,2022-07-01
+CUST00039,Vijay Kumar,1971-11-24,FEMALE,Kochi,Kerala,India,SME,2023-02-07
+CUST00040,Kavya Rao,1966-12-11,FEMALE,Coimbatore,Tamil Nadu,India,PREMIUM,2020-02-17
+CUST00041,Arun Krishnan,1993-07-20,MALE,Chennai,Tamil Nadu,India,RETAIL,2021-07-08
+CUST00042,Meena Menon,1962-07-20,MALE,Mumbai,Maharashtra,India,PREMIUM,2023-09-12
+CUST00043,Priya Krishnan,1990-04-15,FEMALE,Bengaluru,Karnataka,India,RETAIL,2020-08-21
+CUST00044,Manoj Krishnan,1985-12-20,MALE,Hyderabad,Telangana,India,RETAIL,2024-09-01
+CUST00045,Vijay Krishnan,1971-09-12,FEMALE,Pune,Maharashtra,India,PREMIUM,2020-04-16
+CUST00046,Rahul Das,1990-02-16,FEMALE,Mumbai,Maharashtra,India,SME,2025-03-28
+CUST00047,Sneha Sharma,1980-07-22,MALE,Chennai,Tamil Nadu,India,RETAIL,2024-12-19
+CUST00048,Suresh Reddy,1965-12-10,MALE,Delhi,Delhi,India,PREMIUM,2021-11-30
+CUST00049,Sneha Patel,1979-08-28,FEMALE,Mumbai,Maharashtra,India,RETAIL,2024-02-04
+CUST00050,Ravi Rao,1989-10-03,MALE,Delhi,Delhi,India,SALARY,2019-03-01
+CUST00051,Priya Sharma,1972-03-20,MALE,Mumbai,Maharashtra,India,SALARY,2021-02-28
+CUST00052,Divya Patel,1971-04-07,MALE,Coimbatore,Tamil Nadu,India,SME,2018-07-28
+CUST00053,Deepa Patel,1960-02-28,MALE,Chennai,Tamil Nadu,India,SALARY,2021-09-28
+CUST00054,Karthik Menon,1985-02-27,MALE,Kochi,Kerala,India,RETAIL,2018-02-09
+CUST00055,Manoj Iyer,1997-06-09,MALE,Chennai,Tamil Nadu,India,SME,2022-02-21
+CUST00056,Karthik Kumar,1976-05-10,FEMALE,Delhi,Delhi,India,PREMIUM,2018-06-13
+CUST00057,Ravi Reddy,1975-11-12,FEMALE,Bengaluru,Karnataka,India,PREMIUM,2024-04-12
+CUST00058,Manoj Reddy,1995-11-18,FEMALE,Mumbai,Maharashtra,India,RETAIL,2019-12-27
+CUST00059,Karthik Nair,1995-12-26,MALE,Kochi,Kerala,India,SALARY,2025-07-06
+CUST00060,Karthik Sharma,1999-02-14,FEMALE,Kochi,Kerala,India,PREMIUM,2018-06-08
+CUST00061,Divya Menon,1973-09-09,MALE,Pune,Maharashtra,India,RETAIL,2020-07-21
+CUST00062,Ravi Reddy,1974-09-22,MALE,Kochi,Kerala,India,SALARY,2021-02-15
+CUST00063,Sneha Rao,1990-06-25,FEMALE,Kochi,Kerala,India,RETAIL,2024-01-06
+CUST00064,Priya Patel,1986-01-16,MALE,Mumbai,Maharashtra,India,RETAIL,2020-12-23
+CUST00065,Meena Das,1992-09-05,FEMALE,Pune,Maharashtra,India,RETAIL,2021-07-08
+CUST00066,Vijay Krishnan,1971-06-05,FEMALE,Hyderabad,Telangana,India,RETAIL,2018-07-01
+CUST00067,Suresh Rao,1976-05-03,MALE,Hyderabad,Telangana,India,SALARY,2022-11-02
+CUST00068,Meena Nair,1992-04-14,FEMALE,Bengaluru,Karnataka,India,SME,2021-05-15
+CUST00069,Sneha Das,1984-11-13,MALE,Delhi,Delhi,India,SME,2019-06-06
+CUST00070,Ravi Das,1987-08-11,FEMALE,Mumbai,Maharashtra,India,SME,2024-05-20
+CUST00071,Suresh Kumar,1972-11-13,FEMALE,Delhi,Delhi,India,SALARY,2020-05-10
+CUST00072,Anitha Menon,1990-04-22,FEMALE,Coimbatore,Tamil Nadu,India,PREMIUM,2020-05-25
+CUST00073,Ravi Sharma,1983-02-14,FEMALE,Delhi,Delhi,India,RETAIL,2025-06-12
+CUST00074,Deepa Reddy,1970-01-28,MALE,Delhi,Delhi,India,RETAIL,2020-03-26
+CUST00075,Arun Reddy,1987-06-03,FEMALE,Coimbatore,Tamil Nadu,India,SME,2018-10-26
+CUST00076,Manoj Krishnan,1992-03-22,FEMALE,Hyderabad,Telangana,India,SME,2025-10-23
+CUST00077,Vijay Reddy,1989-06-05,MALE,Mumbai,Maharashtra,India,RETAIL,2025-09-17
+CUST00078,Ajay Das,1967-11-21,FEMALE,Hyderabad,Telangana,India,RETAIL,2025-10-21
+CUST00079,Suresh Reddy,1980-06-22,FEMALE,Bengaluru,Karnataka,India,SALARY,2019-07-01
+CUST00080,Ajay Menon,1997-04-04,FEMALE,Kochi,Kerala,India,PREMIUM,2024-02-23
+CUST00081,Kavya Menon,1971-08-17,FEMALE,Coimbatore,Tamil Nadu,India,SME,2020-10-09
+CUST00082,Ravi Reddy,1979-09-24,FEMALE,Delhi,Delhi,India,PREMIUM,2018-11-14
+CUST00083,Rahul Nair,2000-01-22,MALE,Pune,Maharashtra,India,PREMIUM,2024-01-22
+CUST00084,Karthik Reddy,1991-02-16,MALE,Kochi,Kerala,India,RETAIL,2019-09-18
+CUST00085,Vijay Das,1984-05-04,FEMALE,Pune,Maharashtra,India,RETAIL,2023-03-24
+CUST00086,Divya Das,2000-08-02,MALE,Kochi,Kerala,India,SME,2024-07-20
+CUST00087,Anitha Kumar,1973-05-24,FEMALE,Pune,Maharashtra,India,PREMIUM,2022-05-17
+CUST00088,Anitha Reddy,1979-07-20,MALE,Delhi,Delhi,India,SME,2023-06-13
+CUST00089,Sneha Das,1997-09-13,MALE,Mumbai,Maharashtra,India,RETAIL,2023-03-30
+CUST00090,Manoj Das,1963-10-07,FEMALE,Chennai,Tamil Nadu,India,PREMIUM,2025-03-17
+CUST00091,Deepa Menon,1962-04-03,FEMALE,Mumbai,Maharashtra,India,SALARY,2020-12-01
+CUST00092,Divya Menon,1975-02-20,FEMALE,Pune,Maharashtra,India,SME,2022-04-02
+CUST00093,Rahul Sharma,1960-11-13,MALE,Coimbatore,Tamil Nadu,India,SALARY,2024-01-19
+CUST00094,Divya Sharma,1993-10-31,MALE,Chennai,Tamil Nadu,India,PREMIUM,2018-05-08
+CUST00095,Deepa Kumar,1970-09-13,FEMALE,Mumbai,Maharashtra,India,RETAIL,2019-06-02
+CUST00096,Meena Reddy,1991-05-18,FEMALE,Coimbatore,Tamil Nadu,India,PREMIUM,2020-11-15
+CUST00097,Meena Krishnan,1994-11-21,FEMALE,Bengaluru,Karnataka,India,RETAIL,2019-11-02
+CUST00098,Meena Kumar,1985-10-29,FEMALE,Delhi,Delhi,India,SME,2025-08-06
+CUST00099,Kavya Reddy,1986-07-23,MALE,Bengaluru,Karnataka,India,RETAIL,2025-09-29
+CUST00100,Kavya Patel,1995-09-19,MALE,Bengaluru,Karnataka,India,SALARY,2024-05-07

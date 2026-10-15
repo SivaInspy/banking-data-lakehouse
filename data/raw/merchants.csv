@@ -1,0 +1,31 @@
+merchant_id,merchant_name,merchant_category,city,state,country
+MER00001,Urban Retail,ELECTRONICS,Coimbatore,Tamil Nadu,India
+MER00002,Prime Services,E_COMMERCE,Pune,Maharashtra,India
+MER00003,Metro Foods,FUEL,Coimbatore,Tamil Nadu,India
+MER00004,Smart Retail,E_COMMERCE,Chennai,Tamil Nadu,India
+MER00005,Metro Services,GROCERY,Delhi,Delhi,India
+MER00006,Smart Foods,E_COMMERCE,Chennai,Tamil Nadu,India
+MER00007,Urban Retail,HEALTHCARE,Bengaluru,Karnataka,India
+MER00008,Urban Retail,GROCERY,Coimbatore,Tamil Nadu,India
+MER00009,Urban Store,ELECTRONICS,Coimbatore,Tamil Nadu,India
+MER00010,Urban Store,GROCERY,Coimbatore,Tamil Nadu,India
+MER00011,Global Foods,E_COMMERCE,Coimbatore,Tamil Nadu,India
+MER00012,Global Store,ENTERTAINMENT,Mumbai,Maharashtra,India
+MER00013,Urban Retail,RESTAURANT,Coimbatore,Tamil Nadu,India
+MER00014,Smart Foods,HEALTHCARE,Pune,Maharashtra,India
+MER00015,Smart Retail,GROCERY,Kochi,Kerala,India
+MER00016,Global Foods,E_COMMERCE,Pune,Maharashtra,India
+MER00017,Smart Foods,RESTAURANT,Kochi,Kerala,India
+MER00018,Global Retail,RESTAURANT,Pune,Maharashtra,India
+MER00019,Smart Services,RESTAURANT,Pune,Maharashtra,India
+MER00020,Smart Retail,HEALTHCARE,Bengaluru,Karnataka,India
+MER00021,Prime Retail,E_COMMERCE,Pune,Maharashtra,India
+MER00022,Urban Foods,GROCERY,Kochi,Kerala,India
+MER00023,Smart Store,TRAVEL,Pune,Maharashtra,India
+MER00024,Metro Store,TRAVEL,Pune,Maharashtra,India
+MER00025,Prime Mart,FUEL,Mumbai,Maharashtra,India
+MER00026,Urban Retail,GROCERY,Bengaluru,Karnataka,India
+MER00027,Urban Store,HEALTHCARE,Pune,Maharashtra,India
+MER00028,Prime Store,RESTAURANT,Mumbai,Maharashtra,India
+MER00029,Global Services,ELECTRONICS,Coimbatore,Tamil Nadu,India
+MER00030,Metro Retail,FUEL,Hyderabad,Telangana,India
