@@ -10,6 +10,7 @@ from src.quality.validate_pipeline import (
     check_currency,
     check_status,
     check_payment_channel,
+    check_gold_reconciliation,
 )
 from src.transformers.gold_transformation import create_daily_summary
 
@@ -152,3 +153,72 @@ def test_gold_daily_summary_calculates_totals(valid_transactions):
     assert second_day["transaction_count"] == 1
     assert second_day["total_amount"] == pytest.approx(150.00)
     assert second_day["average_transaction_amount"] == pytest.approx(150.00)
+
+def test_gold_reconciliation_passes_when_counts_and_amounts_match(
+    valid_transactions,
+):
+    silver_df = valid_transactions.copy()
+
+    gold_df = pd.DataFrame(
+        {
+            "transaction_count": [2, 1],
+            "total_amount": [350.00, 150.00],
+        }
+    )
+
+    check_gold_reconciliation(silver_df, gold_df)
+
+
+def test_gold_reconciliation_fails_when_counts_do_not_match(
+    valid_transactions,
+):
+    silver_df = valid_transactions.copy()
+
+    gold_df = pd.DataFrame(
+        {
+            "transaction_count": [2, 2],
+            "total_amount": [350.00, 150.00],
+        }
+    )
+
+    with pytest.raises(
+        ValueError,
+        match="transaction counts do not match",
+    ):
+        check_gold_reconciliation(silver_df, gold_df)
+
+
+def test_gold_reconciliation_fails_when_amounts_do_not_match(
+    valid_transactions,
+):
+    silver_df = valid_transactions.copy()
+
+    gold_df = pd.DataFrame(
+        {
+            "transaction_count": [2, 1],
+            "total_amount": [350.00, 149.00],
+        }
+    )
+
+    with pytest.raises(
+        ValueError,
+        match="transaction amounts do not match",
+    ):
+        check_gold_reconciliation(silver_df, gold_df)
+
+
+def test_gold_reconciliation_accepts_rounding_to_two_decimal_places():
+    silver_df = pd.DataFrame(
+        {
+            "amount": [10.101, 20.104],
+        }
+    )
+
+    gold_df = pd.DataFrame(
+        {
+            "transaction_count": [2],
+            "total_amount": [30.20],
+        }
+    )
+
+    check_gold_reconciliation(silver_df, gold_df)
